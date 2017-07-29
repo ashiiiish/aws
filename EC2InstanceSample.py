@@ -1,11 +1,12 @@
 # Converted from EC2InstanceSample.template located at:
 # http://aws.amazon.com/cloudformation/aws-cloudformation-templates/
-
 from troposphere import Base64, FindInMap, GetAtt
 from troposphere import Parameter, Output, Ref, Template
 import troposphere.ec2 as ec2
+import sys
 
-
+#f = open('out.json', 'w')
+sys.stdout = open('out.json', 'w')
 template = Template()
 
 keyname_param = template.add_parameter(Parameter(
