@@ -6,7 +6,7 @@ import troposphere.ec2 as ec2
 import sys
 
 #f = open('out.json', 'w')
-sys.stdout = open('out.json', 'w')
+sys.stdout = open('/Users/ashish/projects/aws/out.json', 'w')
 template = Template()
 
 keyname_param = template.add_parameter(Parameter(
